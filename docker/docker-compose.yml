@@ -1,0 +1,18 @@
+version: '3'
+networks:
+  middleware-network:
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASS=guest
+      - RABBITMQ_DEFAULT_VHOST=middleware
+      - HEALTH_CHECK_CACHE=0
+    networks:
+      - middleware-network

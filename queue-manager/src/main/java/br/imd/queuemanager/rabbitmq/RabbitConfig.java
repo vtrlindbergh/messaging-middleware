@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Declarables;
@@ -20,6 +22,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableRabbit
 @Configuration
 public class RabbitConfig {
+  private static final Logger LOGGER = LoggerFactory.getLogger(RabbitConfig.class);
 
   private final ChannelProperties properties;
 
@@ -29,11 +32,13 @@ public class RabbitConfig {
 
   @Bean("genericExchange")
   public Exchange genericExchange() {
+    LOGGER.info("Create Exchange RabbitMq: {}", properties.getGeneric().name());
     return ExchangeBuilder.topicExchange(properties.getGeneric().name()).durable(true).build();
   }
 
   @Bean("specificExchange")
   public Exchange specificExchange() {
+    LOGGER.info("Create Exchange RabbitMq: {}", properties.getSpecific().name());
     return ExchangeBuilder.topicExchange(properties.getSpecific().name()).durable(true).build();
   }
 
@@ -48,6 +53,7 @@ public class RabbitConfig {
   @Bean("genericQueues")
   public List<Queue> genericQueues() {
     return properties.getGeneric().context().stream()
+        .peek(queueName -> LOGGER.info("Create Queue RabbitMq: {}", queueName))
         .map(context -> QueueBuilder.durable(context).build())
         .toList();
   }
@@ -64,6 +70,7 @@ public class RabbitConfig {
   @Bean("specificQueues")
   public List<Queue> specificQueues() {
     return properties.getSpecific().context().stream()
+        .peek(queueName -> LOGGER.info("Create Queue RabbitMq: {}", queueName))
         .map(context -> QueueBuilder.durable(context).build())
         .toList();
   }

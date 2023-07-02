@@ -57,3 +57,17 @@ services:
       - JVM_OPTS=-Xms256M -Xmx512M
     depends_on:
       - kafka
+
+  mqtt-broker:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt-broker
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    user: 501:501
+    networks:
+      - middleware-network

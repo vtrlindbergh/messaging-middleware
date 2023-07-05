@@ -1,0 +1,21 @@
+
+spring:
+  rabbitmq:
+    addresses: amqp://guest:guest@localhost:5672/middleware
+    ssl:
+      verify-hostname: false
+  kafka:
+    bootstrap-servers: localhost:9092
+  mqtt:
+    broker-url: tcp://localhost:1883
+
+channel:
+  generic:
+    name: generic
+    context:
+      - generic
+  specific:
+    name: specific
+    context:
+      - notification
+      - vasco

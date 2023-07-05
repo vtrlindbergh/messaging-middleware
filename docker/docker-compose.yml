@@ -54,7 +54,7 @@ services:
       - "9000:9000"
     environment:
       - KAFKA_BROKERCONNECT=kafka:9092
-      - JVM_OPTS=-Xms256M -Xmx512M
+      - JVM_OPTS=-Xms115M -Xmx115M
     depends_on:
       - kafka
 

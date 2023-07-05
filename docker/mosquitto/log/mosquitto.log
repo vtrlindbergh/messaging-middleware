@@ -67,3 +67,52 @@
 1688594549: New connection from 172.18.0.1:58828 on port 1883.
 1688594549: New client connected from 172.18.0.1:58828 as mqtt-client (p2, c1, k60).
 1688594555: Client mqtt-client disconnected.
+1688597844: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1688598568: New connection from 172.18.0.1:58830 on port 1883.
+1688598568: New client connected from 172.18.0.1:58830 as mqtt-listener (p2, c1, k60).
+1688598585: Client mqtt-listener closed its connection.
+1688598596: New connection from 172.18.0.1:58832 on port 1883.
+1688598597: New client connected from 172.18.0.1:58832 as mqtt-listener (p2, c1, k60).
+1688598705: New connection from 127.0.0.1:42546 on port 1883.
+1688598705: New client connected from 127.0.0.1:42546 as auto-2402CA7E-F356-E355-EED0-1E6D1C3A0A8A (p2, c1, k60).
+1688598705: Client auto-2402CA7E-F356-E355-EED0-1E6D1C3A0A8A disconnected.
+1688599063: New connection from 127.0.0.1:42548 on port 1883.
+1688599063: New client connected from 127.0.0.1:42548 as auto-646465DC-504B-58D8-EDDF-0B8CEBE6B847 (p2, c1, k60).
+1688599063: Client auto-646465DC-504B-58D8-EDDF-0B8CEBE6B847 disconnected.
+1688599090: Client mqtt-listener closed its connection.
+1688599099: New connection from 172.18.0.1:58836 on port 1883.
+1688599100: New client connected from 172.18.0.1:58836 as mqtt-listener (p2, c1, k60).
+1688599108: New connection from 127.0.0.1:42554 on port 1883.
+1688599108: New client connected from 127.0.0.1:42554 as auto-496359C7-D2A0-9A1C-1241-C8C2EE8F5296 (p2, c1, k60).
+1688599108: Client auto-496359C7-D2A0-9A1C-1241-C8C2EE8F5296 disconnected.
+1688599193: Client mqtt-listener has exceeded timeout, disconnecting.
+1688599429: New connection from 127.0.0.1:42556 on port 1883.
+1688599429: New client connected from 127.0.0.1:42556 as auto-7AB153D0-9671-C2C1-FCF4-77D5B69EA4D4 (p2, c1, k60).
+1688599429: Client auto-7AB153D0-9671-C2C1-FCF4-77D5B69EA4D4 disconnected.
+1688599453: New connection from 172.18.0.1:58838 on port 1883.
+1688599453: New client connected from 172.18.0.1:58838 as mqtt-listener (p2, c1, k60).
+1688599461: New connection from 127.0.0.1:42564 on port 1883.
+1688599461: New client connected from 127.0.0.1:42564 as auto-4067D728-34A8-1451-C3BA-A7D7D6DE6A8A (p2, c1, k60).
+1688599461: Client auto-4067D728-34A8-1451-C3BA-A7D7D6DE6A8A disconnected.
+1688599547: Client mqtt-listener has exceeded timeout, disconnecting.
+1688599645: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1688599666: New connection from 172.18.0.1:58840 on port 1883.
+1688599666: New client connected from 172.18.0.1:58840 as mqtt-listener (p2, c1, k60).
+1688599678: New connection from 127.0.0.1:42568 on port 1883.
+1688599678: New client connected from 127.0.0.1:42568 as auto-99293541-5E8E-417F-4E55-96E893362584 (p2, c1, k60).
+1688599678: Client auto-99293541-5E8E-417F-4E55-96E893362584 disconnected.
+1688599805: Client mqtt-listener closed its connection.
+1688599886: New connection from 172.18.0.1:58844 on port 1883.
+1688599886: New client connected from 172.18.0.1:58844 as mqtt-listener (p2, c1, k60).
+1688599894: New connection from 127.0.0.1:42572 on port 1883.
+1688599894: New client connected from 127.0.0.1:42572 as auto-C1199137-0B41-D991-9780-CE28B3FD381A (p2, c1, k60).
+1688599894: Client auto-C1199137-0B41-D991-9780-CE28B3FD381A disconnected.
+1688600247: Client mqtt-listener closed its connection.
+1688600253: New connection from 172.18.0.1:58846 on port 1883.
+1688600253: New client connected from 172.18.0.1:58846 as mqtt-listener (p2, c1, k60).
+1688600260: Client mqtt-listener closed its connection.
+1688600299: New connection from 172.18.0.1:58848 on port 1883.
+1688600299: New client connected from 172.18.0.1:58848 as mqtt-listener (p2, c1, k60).
+1688600312: New connection from 127.0.0.1:42578 on port 1883.
+1688600312: New client connected from 127.0.0.1:42578 as auto-DDF9B890-B000-C53E-E804-5144DAD6EF52 (p2, c1, k60).
+1688600312: Client auto-DDF9B890-B000-C53E-E804-5144DAD6EF52 disconnected.
